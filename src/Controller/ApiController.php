@@ -26,7 +26,7 @@ class ApiController extends AbstractController
     }
 
     /**
-     * @Route("/api",name="api_new_teachr",methods={"PUT"})
+     * @Route("/api",name="api_new_teachr",methods={"POST"})
      */
     public function newTeacher(Request $request, SerializerInterface $serializer, EntityManagerInterface $em,ValidatorInterface $validator,TeachrRepository $teachrRepository)
     {
@@ -63,4 +63,6 @@ class ApiController extends AbstractController
         }
 
     }
+
+   
 }
